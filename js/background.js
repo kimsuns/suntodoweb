@@ -52,20 +52,20 @@ function seasonBG(theme) {
     nowSeason = "winter";
     console.log("겨울");
   }
-  bgImage.src = `img/${theme}/${nowSeason}/${chosenImage}`;
-  window.document.body.style.backgroundImage = `url("/${bgImage.src}")`;
+  bgImage.src = `/img/${theme}/${nowSeason}/${chosenImage}`;
+  window.document.body.style.backgroundImage = `url("${bgImage.src}")`;
 }
 
 // async function weatherBG(theme) {
 //   const weatherValue = await getWeatherValue();
 //   console.log(weatherValue);
-//   bgImage.src = `img/${theme}/${weatherValue}/${chosenImage}`;
-//   window.document.body.style.backgroundImage = `url("/${bgImage.src}")`;
+//   bgImage.src = `/img/${theme}/${weatherValue}/${chosenImage}`;
+//   window.document.body.style.backgroundImage = `url("${bgImage.src}")`;
 // }
 
 function randomBG(theme) {
-  bgImage.src = `img/${theme}/${chosenImage}`;
-  window.document.body.style.backgroundImage = `url("/${bgImage.src}")`;
+  bgImage.src = `/img/${theme}/${chosenImage}`;
+  window.document.body.style.backgroundImage = `url("${bgImage.src}")`;
 }
 
 const selectedBg = localStorage.getItem(BG_THEME);
