@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>SUNTODO WEB</title>
+  </head>
+  <body>
+    <div id="bg">
+      <select id="bg-select">
+        <option value="bg-season">계절 테마</option>
+        <!-- <option value="bg-weather">날씨 테마</option> -->
+        <option value="bg-animal">랜덤 동물</option>
+        <option value="bg-ranbg">랜덤 배경</option>
+      </select>
+    </div>
+    <div id="weather">
+      <span id="city"></span>
+      <span id="temp"></span>
+      <span></span>
+    </div>
+    <div id="dateTime">
+      <div id="date">날짜</div>
+      <div id="time">00:00:00</div>
+    </div>
+    <div class="main">
+      <div id="login-before" class="hidden">
+        <form id="login-form">
+          <input required placeholder="What is your name?" maxlength="10" />
+          <button>로그인</button>
+        </form>
+      </div>
+      <div id="login-after" class="hidden">
+        <h1>Hello</h1>
+        <form id="todo-form">
+          <input required placeholder="What's your plan?" />
+          <!-- <button>할 일 등록</button> -->
+        </form>
+        <div class="list-div">
+          <ul id="todo-list"></ul>
+        </div>
+        <!-- <div class="list-div">
+          <ul id="complete-list">
+            완료 리스트
+          </ul>
+        </div> -->
+      </div>
+    </div>
+    <script src="/js/login.js"></script>
+    <script src="/js/time.js"></script>
+    <script src="/js/todo.js"></script>
+    <script type="module" src="/js/weather.js"></script>
+    <script src="/js/background.js"></script>
+  </body>
+</html>
