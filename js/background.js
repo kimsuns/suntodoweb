@@ -52,7 +52,7 @@ function seasonBG(theme) {
     nowSeason = "winter";
     console.log("겨울");
   }
-  bgImage.src = `/img/${theme}/${nowSeason}/${chosenImage}`;
+  bgImage.src = `./img/${theme}/${nowSeason}/${chosenImage}`;
   window.document.body.style.backgroundImage = `url("${bgImage.src}")`;
 }
 
@@ -64,7 +64,7 @@ function seasonBG(theme) {
 // }
 
 function randomBG(theme) {
-  bgImage.src = `/img/${theme}/${chosenImage}`;
+  bgImage.src = `./img/${theme}/${chosenImage}`;
   window.document.body.style.backgroundImage = `url("${bgImage.src}")`;
 }
 
